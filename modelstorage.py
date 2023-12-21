@@ -48,7 +48,7 @@ class ModelStorage:
         return values.count(0)
 
     def get_zero_count_for_all_fields(self):
-        fields = ['time', 'distance', 'iterations']
+        fields = ['trial', 'time', 'distance', 'iterations']
         return {fieldname: self._get_zero_count_for_field(fieldname) for fieldname in fields}
 
     def _get_algorithms_set(self):
