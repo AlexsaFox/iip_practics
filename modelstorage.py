@@ -13,7 +13,7 @@ class ModelStorage:
         # типы полей
         # index убран
         # True - категориальные, False - количественные
-        self.fieldtypes = [True, False, False, False, False, False, False, False, True, True]
+        self.fieldtypes = [False, False, False, False, False, False, False, False, True, True]
 
     def load_from_file(self, filename='file1.csv'):
         with open(filename, newline='') as csvfile:
